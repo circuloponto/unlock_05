@@ -61,7 +61,19 @@ const SliderComponent = forwardRef(({
     if (isScrolling) return;
 
     const currentPosition = `${currentVerticalIndex}.${currentHorizontalIndex}`;
-    const nextPosition = movementMap[currentPosition][direction];
+    const possibleMoves = movementMap[currentPosition];
+    
+    console.log('Current Position:', currentPosition);
+    console.log('Possible Movements:', {
+      up: possibleMoves.up,
+      down: possibleMoves.down,
+      left: possibleMoves.left,
+      right: possibleMoves.right
+    });
+    console.log('Attempting to move:', direction);
+    
+    const nextPosition = possibleMoves[direction];
+    console.log('Next Position:', nextPosition);
 
     if (nextPosition) {
       const [nextVertical, nextHorizontal] = nextPosition.split('.').map(Number);
@@ -75,6 +87,8 @@ const SliderComponent = forwardRef(({
       
       setIsScrolling(true);
       setTimeout(() => setIsScrolling(false), 1000);
+    } else {
+      console.log('Movement not possible in direction:', direction);
     }
   }, [currentVerticalIndex, currentHorizontalIndex, isScrolling, movementMap]);
 
