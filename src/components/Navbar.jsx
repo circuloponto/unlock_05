@@ -23,7 +23,7 @@ const Navbar = ({
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth > 1000 && isMenuOpen) {
+            if (window.innerWidth > 1150 && isMenuOpen) {
                 onMenuToggle(false);
             }
         };
@@ -64,11 +64,11 @@ const Navbar = ({
     };
 
     const menuItems = [
-        { key: 'project', vertical: 0, horizontal: 0 },
-        { key: 'targetGroups', vertical: 1, horizontal: 0 },
-        { key: 'methodology', vertical: 2, horizontal: 0 },
-        { key: 'results', vertical: 3, horizontal: 0 },
-        { key: 'partners', vertical: 4, horizontal: 0 },
+        { key: 'project', vertical: 1, horizontal: 0 },
+        { key: 'targetGroups', vertical: 2, horizontal: 0 },
+        { key: 'activities', vertical: 3, horizontal: 0 },
+        { key: 'results', vertical: 4, horizontal: 0 },
+        { key: 'partners', vertical: 5, horizontal: 0 },
     ];
 
     const iconColor = isPressed ? 'rgb(183, 187, 202)' : isHovered ? 'rgb(167, 144, 144)' : 'rgb(222, 222, 222)';
@@ -99,7 +99,7 @@ const Navbar = ({
                             {menuItems.map((item, index) => (
                                 <div
                                     key={item.key}
-                                    className={`menuItem${index + 1} ${currentVerticalIndex === item.vertical ? 'active' : ''}`}
+                                    className={`menuItem${index + 1} ${currentVerticalIndex !== 0 && currentVerticalIndex === item.vertical ? 'active' : ''}`}
                                     onClick={() => handleMenuItemClick(item.vertical, item.horizontal)}
                                     role="button"
                                     tabIndex={0}

@@ -16,14 +16,14 @@ const LanguagePicker = () => {
       >
         EN
       </button>
-      <div style={{width:'10px',height:'14px',background:'white',margin:'0 4px'}}></div>
+     {/*  <div style={{width:'10px',height:'14px',background:'white',margin:'0 4px'}}></div> */}
       <button
         className={`language-button ${i18n.language === 'pt' ? 'active' : ''}`}
         onClick={() => handleLanguageChange('pt')}
       >
         PT
       </button>
-      <div style={{width:'10px',height:'14px',background:'white',margin:'0 4px'}}></div>
+    {/*   <div style={{width:'10px',height:'14px',background:'white',margin:'0 4px'}}></div> */}
       <button
         className={`language-button ${i18n.language === 'nl' ? 'active' : ''}`}
         onClick={() => handleLanguageChange('nl')}

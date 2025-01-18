@@ -9,61 +9,16 @@ i18n
   .init({
     resources: {
       en: { 
-        translation: {
-          ...enTranslations,
-          menu: {
-            project: 'Project',
-            targetGroups: 'Target Groups',
-            methodology: 'Methodology',
-            results: 'Results',
-            partners: 'Partners',
-            contacts: 'Contacts'
-          },
-          contacts: {
-            title: 'Contact Information',
-            project: 'Project Information',
-            partners: 'Partner Contacts'
-          }
-        }
+        translation: enTranslations
       },
       pt: { 
-        translation: {
-          ...ptTranslations,
-          menu: {
-            project: 'Projeto',
-            targetGroups: 'Grupos Alvo',
-            methodology: 'Metodologia',
-            results: 'Resultados',
-            partners: 'Parceiros',
-            contacts: 'Contactos'
-          },
-          contacts: {
-            title: 'Informações de Contacto',
-            project: 'Informações do Projeto',
-            partners: 'Contactos dos Parceiros'
-          }
-        }
+        translation: ptTranslations
       },
       nl: { 
-        translation: {
-          ...nlTranslations,
-          menu: {
-            project: 'Project',
-            targetGroups: 'Doelgroepen',
-            methodology: 'Methodologie',
-            results: 'Resultaten',
-            partners: 'Partners',
-            contacts: 'Contact'
-          },
-          contacts: {
-            title: 'Contactgegevens',
-            project: 'Projectinformatie',
-            partners: 'Contactgegevens Partners'
-          }
-        }
+        translation: nlTranslations
       }
     },
-    lng: 'pt', // default language
+    lng: 'pt',
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false

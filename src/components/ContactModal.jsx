@@ -10,7 +10,7 @@ const ContactModal = ({ isOpen, onClose }) => {
     const { t, i18n } = useTranslation();
     const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
+   /*  useEffect(() => {
         if (isOpen) {
             setIsVisible(true);
         } else {
@@ -19,8 +19,19 @@ const ContactModal = ({ isOpen, onClose }) => {
             }, 300);
             return () => clearTimeout(timer);
         }
+    }, [isOpen]); */
+    useEffect(() => {
+        if (isOpen) {
+            setIsVisible(true);
+            document.querySelector('.hamburger-icon').style.visibility = 'hidden';
+        } else {
+            const timer = setTimeout(() => {
+                setIsVisible(false);
+                document.querySelector('.hamburger-icon').style.visibility = 'visible';
+            }, 300);
+            return () => clearTimeout(timer);
+        }
     }, [isOpen]);
-
     const getLogo = () => {
         switch (i18n.language) {
             case 'pt':
@@ -52,9 +63,9 @@ const ContactModal = ({ isOpen, onClose }) => {
     ];
 
     const projectInfo = t('contactos.projecto', { returnObjects: true });
-
+   
     return (
-        <div className={`modal-overlay ${isVisible ? 'visible' : ''}`} onClick={onClose}>
+        <div className={`modal-overlay ${isVisible ? 'visible' : '' } `} onClick={onClose}>
             <div 
                 className="modal-content"
                 onClick={e => e.stopPropagation()}
@@ -76,15 +87,15 @@ const ContactModal = ({ isOpen, onClose }) => {
                         <div key={key} className="partner-card">
                             <h3>{data.title}</h3>
                             <div className="contact-details">
-                                <div className="contact-item">
+                                <div className="contact-item contactOne">
                                     <FaEnvelope className="contact-icon" />
                                     <a href={`mailto:${data.email}`}>{data.email}</a>
                                 </div>
-                                <div className="contact-item">
+                                <div className="contact-item contactTwo">
                                     <FaPhone className="contact-icon" />
                                     <a href={`tel:${data.mobile}`}>{data.mobile}</a>
                                 </div>
-                                <div className="contact-item">
+                                <div className="contact-item contactThree">
                                     <FaMapMarkerAlt className="contact-icon" />
                                     <span>{data.morada}</span>
                                 </div>

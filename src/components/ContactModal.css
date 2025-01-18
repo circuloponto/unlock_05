@@ -10,18 +10,20 @@
   align-items: stretch;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
   z-index: 9999;
 }
 
 .modal-overlay.visible {
   opacity: 1;
   visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear;
 }
 
 .modal-content {
-  background: #0f314d;
   width: 500px;
+  background: #0f314d;
+  background: #2f4456;
   height: 100vh;
   padding: 2rem;
   position: relative;

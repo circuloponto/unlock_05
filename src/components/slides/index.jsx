@@ -27,7 +27,8 @@ const Slide0 = () => {
   return (
     <DisclaimerSection>
       <div className="slide-container">
-        <div className="slide slide_0">   
+        <div className="slide slide_0" style={{gap:'0',padding:'0'}}>  
+          <div className="title highlight">UNLOCK - Unlocking New Life Opportunities in Carreer Knowledge</div> 
           <img src={disclaimerImages[currentLang]} alt="Disclaimer" style={{ maxWidth: '100%', height: 'auto' }} />
           <div className="disclaimer-text">
             {t('slides.disclaimer')}
