@@ -83,7 +83,7 @@ const menuItems = [
   { key: 'activities', vertical: 3, horizontal: 0 },
   { key: 'results', vertical: 4, horizontal: 0 },
   { key: 'partners', vertical: 5, horizontal: 0 },
-  
+  { key: 'news', vertical: 6, horizontal: 0 },
 ];
 
 const MobileMenu = ({ 
@@ -158,7 +158,7 @@ const MobileMenu = ({
                 }
               }}
             >
-              {t(`menu.${item.key}`)}
+              {item.key === 'news' ? 'Notícias' : t(`menu.${item.key}`)}
             </MenuItem>
           ))}
           <MenuItem

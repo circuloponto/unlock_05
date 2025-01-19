@@ -21,7 +21,7 @@ const Progress = styled.div`
 
 const ProgressBar = ({ currentVerticalIndex, currentHorizontalIndex, isMenuOpen }) => {
   const calculateProgress = () => {
-    const totalSlides = 13;  // Total number of slides including 0.0
+    const totalSlides = 12;  // Total number of slides including 0.0
     const currentProgress = currentVerticalIndex === 0 ? 0 : ((currentVerticalIndex * 2) + currentHorizontalIndex);
     return Math.max(0, (currentProgress / (totalSlides - 1)) * 100);
   };

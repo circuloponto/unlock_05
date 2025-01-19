@@ -69,6 +69,7 @@ const Navbar = ({
         { key: 'activities', vertical: 3, horizontal: 0 },
         { key: 'results', vertical: 4, horizontal: 0 },
         { key: 'partners', vertical: 5, horizontal: 0 },
+        { key: 'news', vertical: 6, horizontal: 0 },
     ];
 
     const iconColor = isPressed ? 'rgb(183, 187, 202)' : isHovered ? 'rgb(167, 144, 144)' : 'rgb(222, 222, 222)';
@@ -96,10 +97,10 @@ const Navbar = ({
                     
                     <div className="menuItemsContainer">
                         <div className='menuitemsInner'>
-                            {menuItems.map((item, index) => (
+                            {menuItems.map((item) => (
                                 <div
                                     key={item.key}
-                                    className={`menuItem${index + 1} ${currentVerticalIndex !== 0 && currentVerticalIndex === item.vertical ? 'active' : ''}`}
+                                    className={`menuItem${menuItems.indexOf(item) + 1} ${currentVerticalIndex !== 0 && currentVerticalIndex === item.vertical ? 'active' : ''}`}
                                     onClick={() => handleMenuItemClick(item.vertical, item.horizontal)}
                                     role="button"
                                     tabIndex={0}
@@ -109,11 +110,11 @@ const Navbar = ({
                                         }
                                     }}
                                 >
-                                    {t(`menu.${item.key}`)}
+                                    {item.key === 'news' ? 'Notícias' : t(`menu.${item.key}`)}
                                 </div>
                             ))}
                             <div
-                                className="menuItem-contact menuItem1"
+                                className="menuItem-contact menuItem7"
                                 onClick={handleContactClick}
                                 role="button"
                                 tabIndex={0}

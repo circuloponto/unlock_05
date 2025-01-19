@@ -11,8 +11,9 @@ const DiamondIndicator = ({
   setCurrentHorizontalIndex
 }) => {
   const canGoNext = () => {
-    // Last row (index 5) has 3 slides, others have 2
-    const maxHorizontalIndex = currentVerticalIndex === 5 ? 2 : 1;
+    // Last partner row (index 5) has 3 slides, others have 2 except news (index 6) which has 1
+    const maxHorizontalIndex = currentVerticalIndex === 5 ? 2 : 
+                             currentVerticalIndex === 6 ? 0 : 1;
     
     // Check if we can go to next slide horizontally
     if (currentHorizontalIndex < maxHorizontalIndex) {
@@ -20,7 +21,7 @@ const DiamondIndicator = ({
     }
     
     // Check if we can go to next row
-    if (currentVerticalIndex < 5) {
+    if (currentVerticalIndex < 6) {
       return true;
     }
     
@@ -52,12 +53,13 @@ const DiamondIndicator = ({
     }
 
     // If we can move horizontally in the current row
-    const maxHorizontalIndex = currentVerticalIndex === 5 ? 2 : 1;
+    const maxHorizontalIndex = currentVerticalIndex === 5 ? 2 : 
+                             currentVerticalIndex === 6 ? 0 : 1;
     if (currentHorizontalIndex < maxHorizontalIndex) {
       setCurrentHorizontalIndex(currentHorizontalIndex + 1);
     }
     // If we need to move to the next row
-    else if (currentVerticalIndex < 5) {
+    else if (currentVerticalIndex < 6) {
       setCurrentVerticalIndex(currentVerticalIndex + 1);
       setCurrentHorizontalIndex(0);
     }

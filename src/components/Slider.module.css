@@ -54,7 +54,7 @@
 
 .row {
   position: absolute;
-  width: 200vw; /* Two slides per row */
+  width: 100vw; /* Single slide per row */
   min-height: 100vh;
 }
 

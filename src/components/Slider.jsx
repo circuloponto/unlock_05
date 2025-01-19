@@ -36,9 +36,10 @@ const SliderComponent = forwardRef(({
     "3.1": { up: null, down: "4.0", left: "3.0", right: null },  // Slide3.1 - down or left
     "4.0": { up: "3.1", down: null, left: null, right: "4.1" },  // Slide4.0 - up or right
     "4.1": { up: null, down: "5.0", left: "4.0", right: null },  // Slide4.1 - down or left
-    "5.0": { up: "4.1", down: null, left: null, right: "5.1" },  // Slide5.0 - up or right
-    "5.1": { up: null, down: null, left: "5.0", right: "5.2" },  // Slide5.1 - left or right
-    "5.2": { up: null, down: null, left: "5.1", right: null }    // Slide5.2 - left only
+    "5.0": { up: "4.1", down: null, left: null, right: "5.1" },  // Partner slide 1
+    "5.1": { up: null, down: null, left: "5.0", right: "5.2" },  // Partner slide 2
+    "5.2": { up: null, down: "6.0", left: "5.1", right: null },  // Partner slide 3
+    "6.0": { up: "5.2", down: null, left: null, right: null }    // News slide
   };
 
   // Map of viewport positions for each slide
@@ -52,9 +53,10 @@ const SliderComponent = forwardRef(({
     "3.1": { x: 400, y: 300 },   // Second slide of row 3
     "4.0": { x: 400, y: 400 },   // First slide of row 4
     "4.1": { x: 500, y: 400 },   // Second slide of row 4
-    "5.0": { x: 500, y: 500 },   // First slide of row 5
-    "5.1": { x: 600, y: 500 },   // Second slide of row 5
-    "5.2": { x: 700, y: 500 }    // Third slide of row 5
+    "5.0": { x: 500, y: 500 },   // First partner slide
+    "5.1": { x: 600, y: 500 },   // Second partner slide
+    "5.2": { x: 700, y: 500 },   // Third partner slide
+    "6.0": { x: 700, y: 600 }    // News slide - below third partner slide
   };
 
   const handleNavigation = useCallback((direction) => {
@@ -271,6 +273,9 @@ const SliderComponent = forwardRef(({
   const getRowHorizontalOffset = (rowIndex) => {
     if (rowIndex === 0) {
       return 100; // Position Slide0 100vw to the right
+    }
+    if (rowIndex === 6) { // News slide
+      return 700;
     }
     return rowIndex * 100; // Each row shifts 100vw to the right
   };

@@ -1,37 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Slider from './components/Slider';
 import ProgressBar from './components/ProgressBar';
 import DiamondIndicator from './components/DiamondIndicator';
-import Navbar from './components/Navbar';
 import Grid from './components/Grid';
-import LanguagePicker from './components/LanguagePicker';
+//import Menu from './components/Menu';
+import Modal from './components/ContactModal';
+import Navbar from './components/Navbar';
 import { slides } from './components/slides/index';
 import './App.css';
 import './i18n';
 import './assets/fonts/fonts.css';
 import Breadcrumb from './components/Breadcrumb';
+import NewsPage from './pages/NewsPage';
 
-function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentVerticalIndex, setCurrentVerticalIndex] = useState(0);
-  const [currentHorizontalIndex, setCurrentHorizontalIndex] = useState(0);
+// Separate component for the main presentation
+const MainPresentation = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [currentVerticalIndex, setCurrentVerticalIndex] = React.useState(0);
+  const [currentHorizontalIndex, setCurrentHorizontalIndex] = React.useState(0);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close menu on escape key
-  useEffect(() => {
-    const handleEscape = (event) => {
-      if (event.key === 'Escape') {
+  React.useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
         setIsMenuOpen(false);
       }
     };
 
-    window.addEventListener('keydown', handleEscape);
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
-      window.removeEventListener('keydown', handleEscape);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
 
@@ -68,11 +71,6 @@ function App() {
         setCurrentHorizontalIndex={setCurrentHorizontalIndex}
         isMenuOpen={isMenuOpen}
       />
-      {/* <LanguagePicker 
-        isMenuOpen={isMenuOpen}
-        currentVerticalIndex={currentVerticalIndex}
-        currentHorizontalIndex={currentHorizontalIndex}
-      /> */}
       <DiamondIndicator 
         currentVerticalIndex={currentVerticalIndex}
         currentHorizontalIndex={currentHorizontalIndex}
@@ -88,6 +86,20 @@ function App() {
       />
 
       <div className="maskBottom"></div>
+    </div>
+  );
+};
+
+// Main App component with routing
+function App() {
+  return (
+    <div className="root-container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPresentation />} />
+          <Route path="/news/:id" element={<NewsPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
