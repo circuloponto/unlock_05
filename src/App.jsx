@@ -93,14 +93,12 @@ const MainPresentation = () => {
 // Main App component with routing
 function App() {
   return (
-    <div className="root-container">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPresentation />} />
-          <Route path="/news/:id" element={<NewsPage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPresentation />} />
+        <Route path="/news/:id" element={<NewsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

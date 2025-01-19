@@ -13,6 +13,7 @@ import news2 from '../../assets/images/news_02.jpg';
 import news3 from '../../assets/images/news_03.jpg';
 import news4 from '../../assets/images/news_04.jpg';
 import styled from 'styled-components';
+import { newsItems } from '../../data/newsItems';
 
 const DisclaimerSection = styled(SlideSection)`
   left: 0;
@@ -38,6 +39,11 @@ const ReadMore = styled.div`
     text-decoration: underline;
   }
 `;
+
+const truncateText = (text, maxLength = 200) => {
+  if (text.length <= maxLength) return text;
+  return text.slice(0, maxLength) + '...';
+};
 
 const Slide0 = () => {
   const { t, i18n } = useTranslation();
@@ -425,30 +431,6 @@ const Slide12 = () => {
   const { t } = useTranslation();
   const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const newsItems = [
-    {
-      id: 1,
-      date: '2024',
-      title: 'Rumo ao Futuro',
-      content: 'O projeto "Rumo ao Futuro" é uma iniciativa inovadora que visa capacitar jovens em situação de vulnerabilidade social, oferecendo formação profissional em tecnologia e desenvolvimento pessoal...',
-      images: [news1, news2, news3, news4]
-    },
-    {
-      id: 2,
-      date: '2023',
-      title: 'Tecnologia e Inclusão',
-      content: 'A iniciativa "Tecnologia e Inclusão" representa um marco importante em nosso compromisso com a democratização do acesso à tecnologia...',
-      images: [news2, news3, news4, news1]
-    },
-    {
-      id: 3,
-      title: "Lançamento do Projeto UNLOCK",
-      date: "2024-01-15",
-      content: "O projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.",
-      images: [news1, news2, news3, news4]
-    }
-  ];
 
   const handlePrevImage = () => {
     const imageCount = newsItems[currentNewsIndex].images.length;
@@ -492,7 +474,7 @@ const Slide12 = () => {
                 </div>
                 <div className="news-content-preview">
                   <div className="news-text">
-                    {newsItems[currentNewsIndex].content}
+                    {truncateText(newsItems[currentNewsIndex].content)}
                     <Link to={`/news/${newsItems[currentNewsIndex].id}`} style={{ textDecoration: 'none', color: '#e6811e' }}>
                       <ReadMore>Read more →</ReadMore>
                     </Link>

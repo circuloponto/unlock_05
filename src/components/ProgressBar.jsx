@@ -21,8 +21,18 @@ const Progress = styled.div`
 
 const ProgressBar = ({ currentVerticalIndex, currentHorizontalIndex, isMenuOpen }) => {
   const calculateProgress = () => {
-    const totalSlides = 12;  // Total number of slides including 0.0
-    const currentProgress = currentVerticalIndex === 0 ? 0 : ((currentVerticalIndex * 2) + currentHorizontalIndex);
+    const totalSlides = 13;  // Total number of slides including 0.0
+    let currentProgress;
+    
+    if (currentVerticalIndex === 0) {
+      currentProgress = 0;
+    } else if (currentVerticalIndex === 5 && currentHorizontalIndex === 2) {
+      // Special case for slide 11 (5.2)
+      currentProgress = ((currentVerticalIndex * 2) + currentHorizontalIndex - 1);
+    } else {
+      currentProgress = ((currentVerticalIndex * 2) + currentHorizontalIndex);
+    }
+    
     return Math.max(0, (currentProgress / (totalSlides - 1)) * 100);
   };
 
