@@ -36,6 +36,36 @@
       "text": "Financiado pela União Europeia. Os pontos de vista e as opiniões expressas são as do(s) autor(es) e não refletem necessariamente a posição da União Europeia ou da Agência Nacional para a Gestão do Programa Erasmus+ Educação e Formação. Nem a União Europeia nem a Agência Nacional podem ser tidos como responsáveis por essas opiniões."
     }
   },
+  "news": {
+    "ui": {
+      "readMore": "Ler mais",
+      "backToHome": "← Voltar",
+      "previous": "←",
+      "next": "→",
+      "notFound": "Notícia não encontrada",
+      "imageCounter": "{{current}} / {{total}}"
+    },
+    "newsItems": [
+      {
+        "id": "1",
+        "date": "2024-01-15",
+        "title": "Lançamento do Projeto UNLOCK",
+        "content": "O projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
+      },
+      {
+        "id": "2",
+        "date": "2024-01-15",
+        "title": "Lançamento do Projeto UNLOCK",
+        "content": "Pois projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
+      },
+      {
+        "id": "3",
+        "date": "2024-01-15",
+        "title": "Lançamento do Projeto UNLOCK",
+        "content": "Três projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
+      }
+    ]
+  },
   "slides": {
     "disclaimer": "O apoio da Comissão Europeia à produção desta publicação não constitui um aval do seu conteúdo, que reflete unicamente o ponto de vista dos autores, e a Comissão não pode ser considerada responsável por eventuais utilizações que possam ser feitas com as informações nela contidas.",
     "slide1": {

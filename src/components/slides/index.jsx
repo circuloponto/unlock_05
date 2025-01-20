@@ -13,7 +13,7 @@ import news2 from '../../assets/images/news_02.jpg';
 import news3 from '../../assets/images/news_03.jpg';
 import news4 from '../../assets/images/news_04.jpg';
 import styled from 'styled-components';
-import { newsItems } from '../../data/newsItems';
+/* import { newsItems } from '../../data/newsItems'; */
 
 const DisclaimerSection = styled(SlideSection)`
   left: 0;
@@ -428,18 +428,26 @@ const Slide11 = () => {
 };
 
 const Slide12 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Get news items from translations
+  const newsItems = t('news.newsItems', { returnObjects: true }) || [];
+  const totalNews = newsItems.length;
+
+  const images = [news1, news2, news3, news4].slice(0, totalNews);
+
   const handlePrevImage = () => {
-    const imageCount = newsItems[currentNewsIndex].images.length;
-    setCurrentImageIndex((prev) => (prev - 1 + imageCount) % imageCount);
+    setCurrentImageIndex((prev) => 
+      (prev - 1 + images.length) % images.length
+    );
   };
 
   const handleNextImage = () => {
-    const imageCount = newsItems[currentNewsIndex].images.length;
-    setCurrentImageIndex((prev) => (prev + 1) % imageCount);
+    setCurrentImageIndex((prev) => 
+      (prev + 1) % images.length
+    );
   };
 
   const handleNewsChange = (index) => {
@@ -447,81 +455,79 @@ const Slide12 = () => {
     setCurrentImageIndex(0);
   };
 
-  const handlePrevNews = () => {
-    setCurrentNewsIndex((prev) => (prev - 1 + newsItems.length) % newsItems.length);
-    setCurrentImageIndex(0);
-  };
+  // Don't render if no news available
+  if (totalNews === 0) return null;
 
-  const handleNextNews = () => {
-    setCurrentNewsIndex((prev) => (prev + 1) % newsItems.length);
-    setCurrentImageIndex(0);
-  };
+  const currentNews = newsItems[currentNewsIndex];
 
   return (
     <SlideSection>
       <div className="slide-container">
         <div className="slide slide_12">
-         
-
           <div className="news-grid">
             {/* Left Column - News Content */}
-            <Link to={`/news/${newsItems[currentNewsIndex].id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <NewsCard className="news-content">
-                <div className="news-header">
-                  <h2 className="news-title highlight">Notícias</h2>
-                  <div className="news-date">{newsItems[currentNewsIndex].date}</div>
-                  <h3 className="news-title">{newsItems[currentNewsIndex].title}</h3>
+            <div className="news-content">
+              <div className="news-header">
+                <h2 className="news-title highlight">Notícias</h2>
+                <div className="news-date">{currentNews.date}</div>
+                <h3 className="news-title">{currentNews.title}</h3>
+              </div>
+              <div className="news-content-preview">
+                <div className="news-text">
+                  {currentNews.content.split('\n')[0]}
+                  <Link to={`/news/${currentNews.id}`} style={{ textDecoration: 'none', color: '#e6811e' }}>
+                    <div className="read-more">{t('news.ui.readMore')}</div>
+                  </Link>
                 </div>
-                <div className="news-content-preview">
-                  <div className="news-text">
-                    {truncateText(newsItems[currentNewsIndex].content)}
-                    <Link to={`/news/${newsItems[currentNewsIndex].id}`} style={{ textDecoration: 'none', color: '#e6811e' }}>
-                      <ReadMore>Read more →</ReadMore>
-                    </Link>
-                  </div>
-                  
-                </div>
+              </div>
+              {totalNews > 1 && (
                 <div className="breadcrumbs" onClick={(e) => e.preventDefault()}>
-                  {newsItems.map((item, index) => (
+                  {newsItems.map((_, index) => (
                     <button
-                      key={item.id}
+                      key={index}
                       className={`breadcrumb ${index === currentNewsIndex ? 'active' : ''}`}
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
                         handleNewsChange(index);
                       }}
-                      title={item.title}
+                      title={newsItems[index].title}
                     />
                   ))}
                 </div>
-              </NewsCard>
-            </Link>
+              )}
+            </div>
 
             {/* Right Column - Image Slideshow */}
             <div className="news-slideshow-column">
               <div className="slideshow-container">
-                <button className="slideshow-nav prev" onClick={handlePrevImage}>
-                  ←
-                </button>
+                {totalNews > 1 && (
+                  <button className="slideshow-nav prev" onClick={handlePrevImage}>
+                    {t('news.ui.previous')}
+                  </button>
+                )}
                 <div className="slideshow-image">
                   <img 
-                    src={newsItems[currentNewsIndex].images[currentImageIndex]} 
-                    alt={`News ${currentImageIndex + 1}`}
+                    src={images[currentImageIndex]}
+                    alt={currentNews.title}
                   />
                 </div>
-                <button className="slideshow-nav next" onClick={handleNextImage}>
-                  →
-                </button>
-                <div className="dot-indicators">
-                  {newsItems[currentNewsIndex].images.map((_, idx) => (
-                    <div 
-                      key={idx}
-                      className={`dot ${idx === currentImageIndex ? 'active' : ''}`}
-                      onClick={() => setCurrentImageIndex(idx)}
-                    />
-                  ))}
-                </div>
+                {totalNews > 1 && (
+                  <button className="slideshow-nav next" onClick={handleNextImage}>
+                    {t('news.ui.next')}
+                  </button>
+                )}
+                {totalNews > 1 && (
+                  <div className="dot-indicators">
+                    {images.map((_, idx) => (
+                      <div 
+                        key={idx}
+                        className={`dot ${idx === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(idx)}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
