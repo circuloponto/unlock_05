@@ -6,7 +6,7 @@ import rumoLogo from '../../assets/images/rumo.png';
 import consultisLogo from '../../assets/images/consultis.png';
 import suemLogo from '../../assets/images/suem.png';
 import ptDisclaimer from '../../assets/images/PT_Disclaimer.png';
-import nlDisclaimer from '../../assets/images/NL_Disclaimer.jpg';
+import nlDisclaimer from '../../assets/images/NL_Disclaimer.png';
 import enDisclaimer from '../../assets/images/EN_Disclaimer.png';
 import news1 from '../../assets/images/news_01_01.jpg';
 import news2 from '../../assets/images/news_01_02.jpg';

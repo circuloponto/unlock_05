@@ -4,7 +4,7 @@ import './ContactModal.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 import ptLogo from '../assets/images/PT_Disclaimer.png';
 import enLogo from '../assets/images/EN_Disclaimer.png';
-import nlLogo from '../assets/images/NL_Disclaimer.jpg';
+import nlLogo from '../assets/images/NL_Disclaimer.png';
 
 const ContactModal = ({ isOpen, onClose }) => {
     const { t, i18n } = useTranslation();
