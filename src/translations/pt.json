@@ -9,7 +9,7 @@
   },
   "contactos": {
     "projecto": {
-      "title": "UNLOCK - Unlocking New Life Opportunities in Career Knowledge",
+      "title": "UNLOCK - Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders",
       "email": "info@unlock.pt"
     },
     "partnerts": {
@@ -49,25 +49,14 @@
       {
         "id": "1",
         "date": "2024-01-15",
-        "title": "Lançamento do Projeto UNLOCK",
-        "content": "O projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
-      },
-      {
-        "id": "2",
-        "date": "2024-01-15",
-        "title": "Lançamento do Projeto UNLOCK",
-        "content": "Pois projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
-      },
-      {
-        "id": "3",
-        "date": "2024-01-15",
-        "title": "Lançamento do Projeto UNLOCK",
-        "content": "Três projeto UNLOCK foi oficialmente lançado hoje com uma cerimónia virtual que reuniu parceiros de Portugal, Holanda e Bélgica. Este projeto inovador visa desenvolver competências digitais em adultos através de uma abordagem única que combina aprendizagem presencial e online. A RUMO, como parceiro português, destaca a importância desta iniciativa para a inclusão digital.\n\nO programa desenvolve soluções tecnológicas adaptadas às necessidades específicas de comunidades carentes, incluindo aplicativos móveis para educação à distância, plataformas de microcrédito e sistemas de gestão para pequenos empreendedores. Cada solução é desenvolvida em estreita colaboração com as comunidades beneficiadas, garantindo sua relevância e efetividade.\n\nOs resultados têm sido notáveis: aumento significativo no acesso à educação digital, crescimento do empreendedorismo local e fortalecimento das redes de apoio comunitário. O projeto não apenas fornece ferramentas tecnológicas, mas também capacita as comunidades para utilizá-las de forma autônoma e sustentável."
+        "title": "Projeto UNLOCK Realiza Primeiro Encontro Transnacional em Lisboa",
+        "content": "No dia 29 de novembro de 2024, o projeto UNLOCK(2024-1-PT01-KA210-VET-000257459) realizou o seu primeiro encontro transnacional em Lisboa, Portugal, numa sessão organizada pela RUMO, entidade coordenadora. Intitulado “Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders”, o projeto une parceiros de Portugal e da Bélgica com o objetivo de enfrentar os desafios de empregabilidade de ex-reclusos. Financiado pelo programa Erasmus+, o Projeto UNLOCK arrancou a 1 de outubro de 2024 e tem uma duração prevista de 18 meses, terminando a 31 de março de 2026. A iniciativa pretende criar recursos e estratégias inovadoras que reforcem as práticas de emprego apoiado, promovendo a integração de ex-reclusos no mercado de trabalho.O encontro decorreu na Casa dos Direitos Sociais, um espaço cedido pela Câmara Municipal de Lisboa, e marcou o arranque oficial das atividades do projeto. Estiveram presentes representantes da RUMO, CONSULTIS e SUEM.BE, que discutiram os objetivos do projeto, o plano de trabalho e as estratégias necessárias para alcançar os resultados esperados.Este encontro foi essencial para lançar as bases do projeto UNLOCK, fortalecendo a colaboração entre os parceiros e definindo prioridades claras para os próximos passos. Com uma visão conjunta e um plano de ação estruturado, o projeto está preparado para gerar um impacto positivo na criação de oportunidades de trabalho para ex-reclusos, através de práticas de emprego apoiado mais eficazes. Acompanhe-nos para mais novidades e atualizações ao longo desta jornada."
       }
+      
     ]
   },
   "slides": {
-    "disclaimer": "O apoio da Comissão Europeia à produção desta publicação não constitui um aval do seu conteúdo, que reflete unicamente o ponto de vista dos autores, e a Comissão não pode ser considerada responsável por eventuais utilizações que possam ser feitas com as informações nela contidas.",
+    "disclaimer": "Financiado pela União Europeia. Os pontos de vista e as opiniões expressas são as do(s) autor(es) e não refletem necessariamente a posição da União Europeia ou da Agência Nacional para a Gestão do Programa Erasmus+ Educação e Formação. Nem a União Europeia nem a Agência Nacional podem ser tidos como responsáveis por essas opiniões.",
     "slide1": {
       "title": "Título em Português",
       "description": "Descrição em Português",

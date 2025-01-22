@@ -8,10 +8,10 @@ import suemLogo from '../../assets/images/suem.png';
 import ptDisclaimer from '../../assets/images/PT_Disclaimer.png';
 import nlDisclaimer from '../../assets/images/NL_Disclaimer.jpg';
 import enDisclaimer from '../../assets/images/EN_Disclaimer.png';
-import news1 from '../../assets/images/news_01.jpg';
-import news2 from '../../assets/images/news_02.jpg';
-import news3 from '../../assets/images/news_03.jpg';
-import news4 from '../../assets/images/news_04.jpg';
+import news1 from '../../assets/images/news_01_01.jpg';
+import news2 from '../../assets/images/news_01_02.jpg';
+import news3 from '../../assets/images/news_01_03.jpg';
+
 import styled from 'styled-components';
 /* import { newsItems } from '../../data/newsItems'; */
 
@@ -40,9 +40,9 @@ const ReadMore = styled.div`
   }
 `;
 
-const truncateText = (text, maxLength = 200) => {
+const truncateText = (text, maxLength = 50) => {
   if (text.length <= maxLength) return text;
-  return text.slice(0, maxLength) + '...';
+  return text.slice(0, maxLength).trim() + '...';
 };
 
 const Slide0 = () => {
@@ -59,7 +59,8 @@ const Slide0 = () => {
     <DisclaimerSection>
       <div className="slide-container">
         <div className="slide slide_0" style={{gap:'0',padding:'0'}}>  
-          <div className="title highlight">UNLOCK - Unlocking New Life Opportunities in Carreer Knowledge</div> 
+          <div className="title highlight">UNLOCK - Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenderse</div> 
+          <div>2024-1-PT01-KA210-VET-000257459</div>
           <img src={disclaimerImages[currentLang]} alt="Disclaimer" style={{ maxWidth: '100%', height: 'auto' }} />
           <div className="disclaimer-text">
             {t('slides.disclaimer')}
@@ -436,7 +437,8 @@ const Slide12 = () => {
   const newsItems = t('news.newsItems', { returnObjects: true }) || [];
   const totalNews = newsItems.length;
 
-  const images = [news1, news2, news3, news4].slice(0, totalNews);
+  // Create array of images
+  const images = [news1, news2, news3];
 
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => 
@@ -474,7 +476,7 @@ const Slide12 = () => {
               </div>
               <div className="news-content-preview">
                 <div className="news-text">
-                  {currentNews.content.split('\n')[0]}
+                  {truncateText(currentNews.content, 150)}
                   <Link to={`/news/${currentNews.id}`} style={{ textDecoration: 'none', color: '#e6811e' }}>
                     <div className="read-more">{t('news.ui.readMore')}</div>
                   </Link>
@@ -501,9 +503,9 @@ const Slide12 = () => {
             {/* Right Column - Image Slideshow */}
             <div className="news-slideshow-column">
               <div className="slideshow-container">
-                {totalNews > 1 && (
+                {images.length > 1 && (
                   <button className="slideshow-nav prev" onClick={handlePrevImage}>
-                    {t('news.ui.previous')}
+                    ←
                   </button>
                 )}
                 <div className="slideshow-image">
@@ -512,12 +514,12 @@ const Slide12 = () => {
                     alt={currentNews.title}
                   />
                 </div>
-                {totalNews > 1 && (
+                {images.length > 1 && (
                   <button className="slideshow-nav next" onClick={handleNextImage}>
-                    {t('news.ui.next')}
+                    →
                   </button>
                 )}
-                {totalNews > 1 && (
+                {images.length > 1 && (
                   <div className="dot-indicators">
                     {images.map((_, idx) => (
                       <div 

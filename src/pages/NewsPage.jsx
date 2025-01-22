@@ -3,13 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Grid from '../components/Grid';
 import styles from './NewsPage.module.css';
-import news1 from '../assets/images/news_01.jpg';
-import news2 from '../assets/images/news_02.jpg';
-import news3 from '../assets/images/news_03.jpg';
-import news4 from '../assets/images/news_04.jpg';
+import news1 from '../assets/images/news_01_01.jpg';
+import news2 from '../assets/images/news_01_02.jpg';
+import news3 from '../assets/images/news_01_03.jpg';
+
 
 const newsImages = {
-  1: [news1, news2, news3, news4],
+  1: [news1, news2, news3,],
   2: [news1, news2]
 };
 

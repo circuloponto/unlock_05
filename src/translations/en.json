@@ -13,12 +13,12 @@
     "slide1": {
       "title": "Project",
       "description": "",
-      "paragraph1": "The transition from prison and reintegration into society present significant challenges for ex-offenders, with employment playing a vital role in facilitating this adjustment and preventing recidivism. The UNLOCK project aims to adapt the European Supported Employment model to promote the inclusion of ex-offenders in the labour market in both Portugal and Belgium. Through tailored pathways, we aim to support their workforce integration, tackle stigma, and promote equal opportunities.",
+      "paragraph1": "Release from prison and the process of reintegrating into society represent a major challenge for ex-offenders, with employment being a crucial factor in supporting this adaptation and preventing recidivism. The UNLOCK project aims to adapt the European Supported Employment model to facilitate the inclusion of ex-offenders in the labor market in Portugal and Belgium. Through personalized pathways, we seek to support the transition to the labor market, combat stigma and promote equal opportunities.",
       "paragraph2": "The main objectives include:",
-      "paragraph3": "1 - Adapting the Supported Employment model for ex-prisoners.",
-      "paragraph4": "2 - Developing career guidance guidelines to support professionals in the labour market reintegration process of ex-offenders.",
-      "paragraph5": "3 - Training 24 professionals who will implement the developed guidelines.",
-      "paragraph6": "4 - Strengthening the support infrastructure for the reintegration of ex-prisoners by improving the qualifications of VET providers responsible for training supported employment consultants. This project aligns with European priorities of inclusion, innovation, and diversity, promoting reintegration and reducing recidivism."
+      "paragraph3": "1 - Adapt the Supported Employment model for ex-offenders.",
+      "paragraph4": "2 - Develop professional guidance guidelines to support professionals in the process of reintegrating ex-offenders into work.",
+      "paragraph5": "3 - Train 24 professionals to apply the developed guidelines.",
+      "paragraph6": "4 - Strengthen the support infrastructure for the reintegration of ex-prisoners by improving the qualifications of VET providers responsible for training supported employment consultants. This project aligns with European priorities of inclusion, innovation, and diversity, promoting reintegration and reducing recidivism."
     },
     "slide2": {
       "section1": {
@@ -70,21 +70,21 @@
   },
   "contactos": {
     "projecto": {
-      "title": "UNLOCK - Unlocking New Life Opportunities in Career Knowledge",
+      "title": "UNLOCK - Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders",
       "email": "info@unlock.pt"
     },
     "partnerts": {
       "rumo": {
         "title": "Rumo",
-        "email": "info@rumo.org.pt",
-        "mobile": "+351 234 567 890",
-        "morada": "Rua da Rua, 123, 1234-123 Porto"
+        "email": "comunicacao@rumo.org.pt",
+        "mobile": "+351 212 064 920",
+        "morada": "Baía do Tejo – Parque Empresarial do Barreiro – Rua 19, nº13"
       },
       "consultis": {
         "title": "Consultis",
-        "email": "info@consultis.pt",
-        "mobile": "+351 234 567 890",
-        "morada": "Rua da Rua, 123, 1234-123 Porto"
+        "email": "consultis@consultis.pt",
+        "mobile": "+351 933261757",
+        "morada": "Rua Calouste Gulbenkian, nº52, 5º andar, E7, 4050-144 Porto, Portugal"
       },
       "suem": {
         "title": "SUEM.BE",
@@ -94,8 +94,26 @@
       }
     },
     "disclaimer": {
-      "text": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the National Agency for the Management of the Erasmus+ Education and Training Programme. Neither the European Union nor the National Agency can be held responsible for them."
+      "text": "Funded by the European Union. Views and opinions expressed are those of the author(s) and do not necessarily reflect those of the European Union or the National Agency for the Management of the Erasmus+ Education and Training Programme. Neither the European Union nor the National Agency can be held responsible for them."
     }
+  },
+  "news": {
+    "ui": {
+      "readMore": "Read more",
+      "backToHome": "← Back",
+      "previous": "←",
+      "next": "→",
+      "notFound": "News not found",
+      "imageCounter": "{{current}} / {{total}}"
+    },
+    "newsItems": [
+      {
+        "id": "1",
+        "date": "2024-01-15",
+        "title": "UNLOCK Project Holds its First Transnational Meeting in Lisbon",
+        "content": "On 29th November 2024, the inaugural transnational meeting of the UNLOCK project (2024-1-PT01-KA210-VET-000257459) was successfully held in Lisbon, Portugal, hosted by RUMO, the coordinating organisation. Officially titled \"Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders\", the project unites partners from Portugal and Belgium in a shared commitment to addressing employment challenges faced by ex-offenders. Funded under the Erasmus+ programme, the UNLOCK Project commenced on 1st October 2024 and will run until 31st March 2026, spanning a total duration of 18 months. Its primary objective is to develop innovative resources and strategies to enhance supported employment practices for ex-offenders, fostering their integration into the labour market. The meeting took place at the Casa dos Direitos Sociais, a venue provided by the Lisbon City Council, and marked the official launch of project activities. Representatives from RUMO, CONSULTIS, and SUEM.BE participated in the discussions, which focused on the project's objectives, work plan, and strategies for achieving its goals. The meeting laid a strong foundation for the UNLOCK Project, fostering collaboration among partners and setting clear objectives for the upcoming activities. With a shared vision and well-defined action plan, the project is poised to make a meaningful impact in improving employment opportunities for ex-offenders through tailored supported employment practices. Stay tuned for more updates as the project unfolds."
+      }
+    ]
   },
   "languagePicker": {
     "en": "EN",
