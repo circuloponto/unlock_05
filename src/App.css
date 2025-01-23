@@ -1990,7 +1990,7 @@ hamburger-icon {
   }
   .slide_1, .slide_2, .slide_3, .slide_4, .slide_5, .slide_6, .slide_7, .slide_8 {
     text-indent: 50px;
-    gap: 6px;
+    gap: 10px;
   }
   .slide_9 .partner-text, .slide_10 .partner-text, .slide_11 .partner-text  {
     font-size: 20px;

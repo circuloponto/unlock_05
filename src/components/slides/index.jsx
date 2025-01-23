@@ -211,23 +211,23 @@ const Slide5 = () => {
   return (
     <SlideSection>
       <div className="slide-container">
-      <div className="slide slide_5">  
+        <div className="slide slide_5">  
           <div>{t('slides.slide3.section1.paragraph1')}</div>
           <div>
             {(() => {
-              const text = t('slides.slide3.section1.paragraph2');
-              const phrase = "Toolkit para o Emprego Apoiado";
-              const index = text.indexOf(phrase);
+              const text = t('slides.slide3.section1.paragraph2').split(' ');
               return (
                 <>
-                  {text.substring(0, index)}
-                  <span className="highlight">{phrase}</span>
-                  {text.substring(index + phrase.length)}
+                  {text[0]} {' '}
+                  <span className="highlight">
+                    {text[1]} {text[2]} {text[3]} {text[4]}
+                  </span>
+                  {' '}{text.slice(5).join(' ')}
                 </>
               );
             })()}
           </div>
-      </div>
+        </div>
       </div>
     </SlideSection>
   );
@@ -238,38 +238,38 @@ const Slide6 = () => {
   return (
     <SlideSection>
       <div className="slide-container">
-      <div className="slide slide_6"> 
-        <div>
+        <div className="slide slide_6"> 
           <div>
-            {(() => {
-              const text = t('slides.slide3.section2.paragraph1');
-              const phrase = "Formação Piloto: Desenvolvimento Profissional para o Apoio à Reintegração de Ex-Reclusos";
-              const index = text.indexOf(phrase);
-              return (
-                <>
-                  {text.substring(0, index)}
-                  <span className="highlight">{phrase}</span>
-                  {text.substring(index + phrase.length)}
-                </>
-              );
-            })()}
-          </div>
-          <div>
-            {(() => {
-              const text = t('slides.slide3.section2.paragraph2');
-              const phrase = "Disseminação, Exploração e Eventos Multiplicadores";
-              const index = text.indexOf(phrase);
-              return (
-                <>
-                  {text.substring(0, index)}
-                  <span className="highlight">{phrase}</span>
-                  {text.substring(index + phrase.length)}
-                </>
-              );
-            })()}
+            <div>
+              {(() => {
+                const text = t('slides.slide3.section2.paragraph1').split(' ');
+                return (
+                  <>
+                    {text[0]} {' '}
+                    <span className="highlight">
+                      {text[1]} {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]}
+                    </span>
+                    {' '}{text.slice(8).join(' ')}
+                  </>
+                );
+              })()}
+            </div>
+            <div>
+              {(() => {
+                const text = t('slides.slide3.section2.paragraph2').split(' ');
+                return (
+                  <>
+                    {text[0]} {text[1]} {' '}
+                    <span className="highlight">
+                      {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
+                    </span>
+                    {' '}{text.slice(7).join(' ')}
+                  </>
+                );
+              })()}
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </SlideSection>
   );
@@ -340,14 +340,14 @@ const Slide9 = () => {
             {(() => {
               const text = t('slides.slide5.section1.paragraph1');
               const phrase = "Rumo, Cooperativa de Solidariedade Social, Crl";
-              const websiteText = "www.rumo.org.pt/";
-              const websiteLink = "https://www.rumo.org.pt/";
+              const websiteText = "www.rumo.org.pt";
+              const websiteLink = "https://" + websiteText;
               const index = text.indexOf(phrase);
               const websiteIndex = text.indexOf(websiteText);
               
               return (
                 <>
-                 <span>A </span>
+                
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
@@ -377,16 +377,17 @@ const Slide10 = () => {
               const text = t('slides.slide5.section2.paragraph1');
               const phrase = "Consultis";
               const websiteText = "www.consultis.pt";
+              const websiteLink = "https://" + websiteText;
               const index = text.indexOf(phrase);
               const websiteIndex = text.indexOf(websiteText);
               
               return (
                 <>
-                <span>A </span>
+               
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
-                    <a href="https://www.consultis.pt" target="_blank" rel="noopener noreferrer">
+                    <a href={websiteLink} target="_blank" rel="noopener noreferrer">
                       {websiteText}
                     </a>
                   </span>
@@ -412,7 +413,7 @@ const Slide11 = () => {
               const text = t('slides.slide5.section3.paragraph1');
               const phrase = "SUEM.BE";
               const websiteText = "www.suem.be";
-              const websiteLink = "https://www.suem.be";
+              const websiteLink = "https://" + websiteText;
               const index = text.indexOf(phrase);
               const websiteIndex = text.indexOf(websiteText);
               

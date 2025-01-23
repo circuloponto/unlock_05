@@ -22,8 +22,8 @@
 
 .modal-content {
   width: 500px;
-  background: #0f314d;
-  background: #2f4456;
+ /*  background: #0f314d; */
+  background: #002f57;
   height: 100vh;
   padding: 2rem;
   position: relative;

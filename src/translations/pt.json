@@ -23,13 +23,13 @@
         "title": "Consultis",
         "email": "consultis@consultis.pt",
         "mobile": "+351 933261757",
-        "morada": "Rua Calouste Gulbenkian, nº52, 5º andar, E7, 4050-144 Porto, Portugal"
+        "morada": "Centro de Recursos em Emprego Apoiado, Rua Calouste Gulbenkian, nº52, 5º andar, E7, 4050-144 Porto, Portugal"
       },
       "suem": {
         "title": "SUEM.BE",
         "email": "info@suem.be",
         "mobile": "+351 234 567 890",
-        "morada": "Rua da Rua, 123, 1234-123 Porto"
+        "morada": "Kongostraat 7, 9000 Gent, Belgium."
       }
     },
     "disclaimer": {
@@ -106,13 +106,25 @@
     },
     "slide5": {
       "section1": {
-        "paragraph1": "A Rumo, Cooperativa de Solidariedade Social, Crl, fundada em 1981, é uma organização sem fins lucrativos, sediada no Barreiro, Portugal. A sua missão é promover a inclusão educativa, profissional e comunitária de pessoas em situação de desvantagem, na perspetiva do Movimento de Emprego Apoiado. Membro fundador da Associação Portuguesa de Emprego Apoiado, a Rumo atua em áreas como a formação profissional, a integração laboral e o apoio a grupos vulneráveis, como as pessoas com deficiência ou incapacidade. O trabalho em rede é fundamental para o desenvolvimento da Rumo, considerando que as parcerias são fundamentais para uma gestão eficaz. Através de uma parceria diferentes pessoas, equipas e organizações podem trabalhar em conjunto para enfrentar interesses e preocupações comuns. A RUMO colabora em rede com empregadores, instituições públicas, organizações da sociedade civil, centros de formação profissional e grupos de autoajuda, promovendo a consciencialização sobre os direitos de pessoas em situação de desvantagem e/ou em risco de exclusão social, e oferecendo apoio à integração no mercado de trabalho, formação de profissionais e outros serviços. Em 2023, a Rumo alcançou cerca de 1800 beneficiários, incluindo 25 ex-reclusos. Para mais informações, consulte o nosso site em www.rumo.org.pt/."
+        "paragraph1": "A Rumo, Cooperativa de Solidariedade Social, Crl, fundada em 1981, é uma organização sem fins lucrativos sediada no Barreiro, Portugal. A sua missão é promover a inclusão educacional, profissional e comunitária de pessoas em situação de desvantagem, no âmbito do Movimento de Emprego Apoiado. Membro fundador da Associação Portuguesa de Emprego Apoiado, a Rumo atua em áreas como a formação profissional, integração no mercado de trabalho e apoio a grupos vulneráveis, incluindo pessoas com deficiência ou incapacidade. O trabalho em rede é essencial para o desenvolvimento da Rumo, uma vez que as parcerias são fundamentais para uma gestão eficaz. Através de parcerias, diferentes indivíduos, equipas e organizações podem trabalhar em conjunto para abordar interesses e preocupações comuns. A Rumo colabora numa rede de empregadores, instituições públicas, organizações da sociedade civil, centros de formação profissional e grupos de autodefesa, sensibilizando para os direitos das pessoas em situação de desvantagem e em risco de exclusão social, oferecendo apoio à integração no mercado de trabalho, formação profissional e outros serviços. Em 2023, a Rumo alcançou aproximadamente 1.800 beneficiários, incluindo 25 ex-reclusos. Para mais informações, consulte o nosso site em www.rumo.org.pt/",
+        "highlight": {
+          "name": "Rumo, Cooperativa de Solidariedade Social, Crl",
+          "website": "www.rumo.org.pt/"
+        }
       },
       "section2": {
-        "paragraph1": "A Consultis é uma organização fundada em 2005, com sede em Vila Nova de Gaia, Portugal, especializada em consultoria empresarial, inovação e emprego apoiado. Membro ativo da Associação Portuguesa de Emprego Apoiado, a Consultis opera um Centro de Recursos em Emprego Apoiado no Porto, oferecendo apoio a empresas e a grupos em situação de desvantagem no mercado de trabalho e na sociedade, como pessoas com deficiência ou incapacidade, jovens em risco de exclusão, migrantes e desempregados de longa duração. A organização oferece serviços de consultoria, formação e emprego apoiado, em estreita colaboração com empresas, instituições educativas e entidades públicas. Para mais informações, consulte o nosso site em www.consultis.pt."
+        "paragraph1": "A Consultis é uma organização fundada em 2005, com sede em Vila Nova de Gaia, Portugal, especializada em consultoria empresarial, inovação e emprego apoiado. Membro ativo da Associação Portuguesa de Emprego Apoiado, a Consultis opera um Centro de Recursos em Emprego Apoiado no Porto, oferecendo apoio a empresas e a grupos em situação de desvantagem no mercado de trabalho e na sociedade, como pessoas com deficiência ou incapacidade, jovens em risco de exclusão, migrantes e desempregados de longa duração. A organização oferece serviços de consultoria, formação e emprego apoiado, em estreita colaboração com empresas, instituições educativas e entidades públicas. Para mais informações, consulte o nosso site em www.consultis.pt",
+        "highlight": {
+          "name": "Consultis",
+          "website": "www.consultis.pt"
+        }
       },
       "section3": {
-        "paragraph1": "A SUEM.BE, fundada em 2014, é uma organização não governamental com sede em Gent, Bélgica, e atua como associação de referência para o Emprego Apoiado. Os parceiros da SUEM.BE são: o PES-Flandres e o seu parceiro interno GTB, além das redes das Empresas Sociais de Integração no Mercado de Trabalho. A sua missão é promover a inclusão no mercado de trabalho de pessoas com deficiência e outros grupos desfavorecidos, apoiando a implementação do Emprego Apoiado nas organizações. A SUEM.BE participa em projetos nacionais e europeus, organiza conferências, sessões informativas e forma profissionais na área do Emprego Apoiado. Além disso, publica estudos, partilha boas práticas e estimula o diálogo entre profissionais, responsáveis políticos e académicos. A SUEM.BE é também membro da Associação Europeia de Emprego Apoiado (ASEE), que reúne as Associações Nacionais de Emprego Apoiado na Europa, e contribui ativamente para o desenvolvimento e disseminação de soluções inclusivas e de melhores práticas no setor. Para mais informações, consulte o nosso site em www.suem.be."
+        "paragraph1": "A SUEM.BE, fundada em 2014, é uma organização não governamental com sede em Gent, Bélgica, e atua como associação de referência para o Emprego Apoiado. Os parceiros da SUEM.BE são: o PES-Flandres e o seu parceiro interno GTB, além das redes das Empresas Sociais de Integração no Mercado de Trabalho. A sua missão é promover a inclusão no mercado de trabalho de pessoas com deficiência e outros grupos desfavorecidos, apoiando a implementação do Emprego Apoiado nas organizações. A SUEM.BE participa em projetos nacionais e europeus, organiza conferências, sessões informativas e forma profissionais na área do Emprego Apoiado. Além disso, publica estudos, partilha boas práticas e estimula o diálogo entre profissionais, responsáveis políticos e académicos. A SUEM.BE é também membro da Associação Europeia de Emprego Apoiado (ASEE), que reúne as Associações Nacionais de Emprego Apoiado na Europa, e contribui ativamente para o desenvolvimento e disseminação de soluções inclusivas e de melhores práticas no setor. Para mais informações, consulte o nosso site em www.suem.be",
+        "highlight": {
+          "name": "SUEM.BE",
+          "website": "www.suem.be"
+        }
       }
     }
   },

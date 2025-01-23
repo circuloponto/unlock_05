@@ -110,7 +110,7 @@ const Navbar = ({
                                         }
                                     }}
                                 >
-                                    {item.key === 'news' ? 'Notícias' : t(`menu.${item.key}`)}
+                                    {item.key === 'news' ? 'notícias' : t(`menu.${item.key}`)}
                                 </div>
                             ))}
                             <div
