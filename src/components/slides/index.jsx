@@ -411,7 +411,8 @@ const Slide11 = () => {
             {(() => {
               const text = t('slides.slide5.section3.paragraph1');
               const phrase = "SUEM.BE";
-              const websiteText = "https://www.suem.be/";
+              const websiteText = "www.suem.be";
+              const websiteLink = "https://www.suem.be";
               const index = text.indexOf(phrase);
               const websiteIndex = text.indexOf(websiteText);
               
@@ -421,7 +422,7 @@ const Slide11 = () => {
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
-                    <a href={websiteText} target="_blank" rel="noopener noreferrer">
+                    <a href={websiteLink} target="_blank" rel="noopener noreferrer">
                       {websiteText}
                     </a>
                   </span>

@@ -289,7 +289,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.menuItem1,.menuItem2,.menuItem3,.menuItem4,.menuItem5,.menuItem6 {
+.menuItem1,.menuItem2,.menuItem3,.menuItem4,.menuItem5,.menuItem6, .menuItem7 {
   cursor: pointer;
   padding: calc(var(--cell-size)* 0.1);
   transition: all 0.3s ease;
@@ -1014,6 +1014,7 @@ a:hover .highlight {
 
   .slide{
     font-size: 14px;
+    
   }
 .slide_0,.slide_1, .slide_2, .slide_3, .slide_4, .slide_5, .slide_6, .slide_7, .slide_8 {
   font-size: 14px;
@@ -1161,6 +1162,9 @@ a:hover .highlight {
 .li-flex{
   display: flex;
   
+}
+.bullet{
+  margin-top: 50px;
 }
 .bullet::before{
   content: "• ";
@@ -1867,7 +1871,7 @@ hamburger-icon {
   
   .slide{
     font-size: 20px;
-   
+    
     
   }
   .slide_0 img{
@@ -1984,7 +1988,10 @@ hamburger-icon {
     padding-right: calc(var(--cell-size)* 1);
     background: #e7e2e0;
   }
-  
+  .slide_1, .slide_2, .slide_3, .slide_4, .slide_5, .slide_6, .slide_7, .slide_8 {
+    text-indent: 50px;
+    gap: 6px;
+  }
   .slide_9 .partner-text, .slide_10 .partner-text, .slide_11 .partner-text  {
     font-size: 20px;
   }
@@ -2268,11 +2275,11 @@ hamburger-icon {
 }
 
 
-.menuItem-contact {
+/* .menuItem-contact {
   background: rgb(230 131 29);
   color:white;
 
-}
+} */
 
 .menuItem-contact:hover {
   background: rgba(0, 0, 0, 0.3);
@@ -2973,6 +2980,7 @@ hamburger-icon {
   
   .slide{
     font-size: 16px;
+    text-indent: 50px;
     
    
     
