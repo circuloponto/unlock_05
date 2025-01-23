@@ -261,7 +261,7 @@
   z-index: 11;
   position: fixed;
   top: calc(var(--cell-size)* 2);
-  left: calc(var(--cell-size)* 3);
+  left: calc(var(--cell-size)* 1);
   margin-left: calc(var(--cell-size)* 3);
   width: calc(var(--cell-size)* 15);
   height: calc(var(--cell-size)* 1);
@@ -1833,7 +1833,7 @@ hamburger-icon {
   justify-content: center;
 }
 .menuItemsContainer {
-  width: calc(var(--cell-size)* 17);
+  width: calc(var(--cell-size)* 19);
 }
 .menuitemsInner {
   /* border: 2px solid #ffffff00; */
@@ -2189,7 +2189,7 @@ hamburger-icon {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(var(--cell-size)* 18);
+    width: calc(var(--cell-size)* 22);
     justify-content: flex-start;
     padding-top: calc(var(--cell-size)* 1);
     padding-bottom: calc(var(--cell-size)* 1);

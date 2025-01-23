@@ -1,0 +1,122 @@
+@keyframes moveUp {
+  0% { transform: translateY(20px); }
+ /*  50% { transform: translateY(-20px); } */
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes moveDown {
+  0%{ transform: translateY(-20px); }
+  100% { transform: translateY(20px); }
+}
+
+@keyframes moveLeft {
+  0% { transform: translateX(10px); }
+  100% { transform: translateX(-10px); }
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+@keyframes pulseArrow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+/* .DirectionalScrollIndicator{
+  position: fixed;
+  top: calc(var(--cell-size) * 4);
+  right: 40px;
+} */
+.scrollContainer {
+  display: flex;
+  gap: 500px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 80px;
+  height: 120px;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.scrollPath {
+  width: 40px;
+  height: 60px;
+  border: 5px solid rgba(255, 255, 255, 0.651);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrollDot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(230, 115, 14);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.scrollDot.moveUp {
+  animation: moveUp 0.8s infinite linear;
+}
+
+.scrollDot.moveDown {
+  animation: moveDown 0.8s infinite linear;
+}
+
+.scrollDot.moveLeft {
+  animation: moveLeft 0.8s infinite linear;
+}
+
+.scrollDot.moveRight {
+  animation: moveRight 0.8s infinite linear;
+}
+
+.directionArrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-color: rgb(230, 115, 14);
+  border-width: 0 6px 6px 0;
+  opacity: 0.9;
+  animation: pulseArrow 1.2s infinite ease-in-out;
+  z-index: 1001;
+}
+
+.arrowUp {
+  top: 0;
+  left: calc(50% - 7px);
+  transform: rotate(-135deg);
+}
+
+.arrowDown {
+  bottom: 15px;
+  left: calc(50% - 7px);
+  transform: rotate(45deg);
+}
+
+.arrowLeft {
+  left: 0px;
+  top: calc(50% - 7px);
+  transform: rotate(135deg);
+}
+
+.arrowRight {
+  right: 0px;
+  top: calc(50% - 5px);
+  transform: rotate(-45deg);
+}

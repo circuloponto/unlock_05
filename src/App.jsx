@@ -13,6 +13,8 @@ import './i18n';
 import './assets/fonts/fonts.css';
 import Breadcrumb from './components/Breadcrumb';
 import NewsPage from './pages/NewsPage';
+import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator';
+import DirectionalScrollIndicator from './components/ScrollIndicator/DirectionalScrollIndicator';
 
 // Separate component for the main presentation
 const MainPresentation = () => {
@@ -78,6 +80,11 @@ const MainPresentation = () => {
         setCurrentVerticalIndex={setCurrentVerticalIndex}
         setCurrentHorizontalIndex={setCurrentHorizontalIndex}
       />
+
+      {/* <DirectionalScrollIndicator 
+        currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }}
+        isMenuOpen={isMenuOpen}
+      /> */}
 
       <ProgressBar 
         currentVerticalIndex={currentVerticalIndex}

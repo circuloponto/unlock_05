@@ -1,4 +1,5 @@
 import React from 'react';
+import DirectionalScrollIndicator from './ScrollIndicator/DirectionalScrollIndicator';
 
 const Breadcrumb = ({ slides, currentVerticalIndex, currentHorizontalIndex, setCurrentVerticalIndex, setCurrentHorizontalIndex, isMenuOpen }) => {
   return (
@@ -18,6 +19,7 @@ const Breadcrumb = ({ slides, currentVerticalIndex, currentHorizontalIndex, setC
           ))}
         </div>
       ))}
+      <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} />
     </nav>
   );
 };
