@@ -59,8 +59,8 @@ const Slide0 = () => {
     <DisclaimerSection>
       <div className="slide-container">
         <div className="slide slide_0" style={{gap:'0',padding:'0'}}>  
-          <div className="title highlight">UNLOCK - Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenderse</div> 
-          <div>2024-1-PT01-KA210-VET-000257459</div>
+          <div className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div> 
+          <div className="subtitle">2024-1-PT01-KA210-VET-000257459</div>
           <img src={disclaimerImages[currentLang]} alt="Disclaimer" style={{ maxWidth: '100%', height: 'auto' }} />
           <div className="disclaimer-text">
             {t('slides.disclaimer')}
@@ -78,7 +78,7 @@ const Slide1 = () => {
       <div className="slide-container">
         <div className="slide slide_1">   
           
-            <div className="title highlight">UNLOCK - Unlocking New Life Opportunities in Carreer Knowledge</div>
+            <div className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div>
             {t('slides.slide1.paragraph1')}
           
           <div>
@@ -123,6 +123,12 @@ const Slide2 = () => {
             </span>
             {' - ' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
           </div>
+          <div className="last-paragraph">
+            
+              {t('slides.slide1.paragraph7').split(' - ')[0]}
+           
+            
+          </div>
       </div>
       </div>
     </SlideSection>
@@ -137,19 +143,19 @@ const Slide3 = () => {
       <div className="slide slide_3">  
           <div>{t('slides.slide2.section1.paragraph1')}</div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section1.paragraph2').split(':')[0]}:
             </span>
             {t('slides.slide2.section1.paragraph2').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section1.paragraph3').split(':')[0]}:
             </span>
             {t('slides.slide2.section1.paragraph3').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section1.paragraph4').split(':')[0]}:
             </span>
             {t('slides.slide2.section1.paragraph4').split(':')[1]}
@@ -169,20 +175,20 @@ const Slide4 = () => {
       <div className="slide-container">
       <div className="slide slide_4">  
       <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section2.paragraph1').split(':')[0]}:
             </span>
             {t('slides.slide2.section2.paragraph1').split(':')[1]}
           </div>
         
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section2.paragraph2').split(':')[0]}:
             </span>
             {t('slides.slide2.section2.paragraph2').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide2.section2.paragraph3').split(':')[0]}:
             </span>
             {t('slides.slide2.section2.paragraph3').split(':')[1]}
@@ -277,13 +283,13 @@ const Slide7 = () => {
       <div className="slide slide_7"> 
           <div>{t('slides.slide4.section1.paragraph1')}</div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide4.section1.paragraph2').split(':')[0]}:
             </span>
             {t('slides.slide4.section1.paragraph2').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide4.section1.paragraph3').split(':')[0]}:
             </span>
             {t('slides.slide4.section1.paragraph3').split(':')[1]}
@@ -301,19 +307,19 @@ const Slide8 = () => {
       <div className="slide-container">
         <div className="slide slide_8">
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide4.section2.paragraph1').split(':')[0]}:
             </span>
             {t('slides.slide4.section2.paragraph1').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide4.section2.paragraph2').split(':')[0]}:
             </span>
             {t('slides.slide4.section2.paragraph2').split(':')[1]}
           </div>
           <div>
-            <span className="highlight">
+            <span className="highlight bullet">
               {t('slides.slide4.section2.paragraph3').split(':')[0]}:
             </span>
             {t('slides.slide4.section2.paragraph3').split(':')[1]}
@@ -334,7 +340,8 @@ const Slide9 = () => {
             {(() => {
               const text = t('slides.slide5.section1.paragraph1');
               const phrase = "Rumo, Cooperativa de Solidariedade Social, Crl";
-              const websiteText = "https://www.rumo.org.pt/";
+              const websiteText = "www.rumo.org.pt/";
+              const websiteLink = "https://www.rumo.org.pt/";
               const index = text.indexOf(phrase);
               const websiteIndex = text.indexOf(websiteText);
               
@@ -344,7 +351,7 @@ const Slide9 = () => {
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
-                    <a href={websiteText} target="_blank" rel="noopener noreferrer">
+                    <a href={websiteLink} target="_blank" rel="noopener noreferrer">
                       {websiteText}
                     </a>
                   </span>
@@ -476,7 +483,7 @@ const Slide12 = () => {
               </div>
               <div className="news-content-preview">
                 <div className="news-text">
-                  {truncateText(currentNews.content, 150)}
+                  {truncateText(currentNews.content, 250)}
                   <Link to={`/news/${currentNews.id}`} style={{ textDecoration: 'none', color: '#e6811e' }}>
                     <div className="read-more">{t('news.ui.readMore')}</div>
                   </Link>

@@ -1051,10 +1051,14 @@ a:hover .highlight {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
   width: 85vw;
   text-align: justify;
   text-align-last: center;
  
+}
+.slide_0 .subtitle{
+  font-weight: 600;
 }
 .slide_0 img{
   width: 250px;
@@ -1148,8 +1152,20 @@ a:hover .highlight {
 
 .title {
   margin: 0 0 calc(var(--cell-size)*0.5) 0;
+  font-weight: 600;
 }
-
+.last-paragraph{
+  margin: 10px 0 0 0;
+  text-indent: 40px;
+}
+.li-flex{
+  display: flex;
+  
+}
+.bullet::before{
+  content: "• ";
+  color: #d86f1e;
+}
 .app {
   background: #eaeef2;
 }
@@ -1498,6 +1514,7 @@ hamburger-icon {
     margin: 0 20px;
 
    }
+   
    .slide_10 .partner-logo{
     height:100px;
     margin: 20px 20px;
@@ -1610,7 +1627,7 @@ hamburger-icon {
 
    }
    .slide_10 .partner-logo{
-    height:100px;
+    height:90px;
     margin: 20px 20px;
    }
    .slide_11 .partner-logo{
@@ -1758,7 +1775,7 @@ hamburger-icon {
 
    }
    .slide_10 .partner-logo{
-    height:60px;
+    height:90px;
     margin: 20px 20px;
    }
    .slide_11 .partner-logo{
@@ -1990,9 +2007,13 @@ hamburger-icon {
     margin: 0 20px;
 
    }
+  
    .slide_10 .partner-logo{
-    height:60px;
+    height:90px;
     margin: 20px 20px;
+   }
+   .slide10 .consultis{
+    height:90px;
    }
    .slide_11 .partner-logo{
     height:100px;
