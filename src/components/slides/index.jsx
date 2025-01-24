@@ -114,14 +114,14 @@ const Slide2 = () => {
             <span className="highlight">
               {t('slides.slide1.paragraph5').split(' - ')[0]}
             </span>
-            {'-' + t('slides.slide1.paragraph5').split(' - ').slice(1).join(' - ')}
+            {' - ' + t('slides.slide1.paragraph5').split(' - ').slice(1).join(' - ')}
           </div>
         
           <div>
             <span className="highlight">
               {t('slides.slide1.paragraph6').split(' - ')[0]}
             </span>
-            {' - ' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
+            {'-' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
           </div>
           
       </div>
