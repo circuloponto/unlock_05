@@ -3754,7 +3754,7 @@ hamburger-icon {
   color: #164266;
 }
 .slide_0, .slide_1, .slide_2, .slide_3, .slide_4, .slide_5, .slide_6, .slide_7, .slide_8 {
-  font-size: 11px;
+  font-size: 13px;
   padding: calc(var(--cell-size)* 1);
   padding-top: calc(var(--cell-size)* 7);
   background: #e7e2e0;
@@ -3773,27 +3773,27 @@ hamburger-icon {
 .slide_6{
   padding: calc(var(--cell-size)* 1);
   padding-top: calc(var(--cell-size)* 7);
-  font-size: 10px;
+  
   background: #e7e2e0;
   min-height: calc(100vh - calc(var(--cell-size)* 4) - 50px);
 }
 .slide_7{
   padding: calc(var(--cell-size)* 1);
   padding-top: calc(var(--cell-size)* 5);
-  font-size: 11px;
+ 
   background: #e7e2e0;
   min-height: calc(100vh - calc(var(--cell-size)* 4) - 50px);
 }
 .slide_9{
   padding-top: calc(var(--cell-size)* 7);
   padding:50px 10px 0 10px;
-  font-size: 10px;
+ font-size: 13px;
   background: #e7e2e0;
   background: #e7e2e0;
   min-height: calc(100vh - calc(var(--cell-size)* 4) - 50px);
 }
 .slide_9 .partner-text{
-  font-size: 10px;
+  font-size: 13px;
 }
 .slide_10{
   padding-top: calc(var(--cell-size)* 7);
@@ -3803,17 +3803,17 @@ hamburger-icon {
   
 }
 .slide_10 .partner-text{
-  font-size: 10px;
+  font-size: 13px;
 }
 .slide_11{
   padding-top: calc(var(--cell-size)* 7);
   padding:50px 10px 0 10px;
-  font-size: 10px;
+  
   background: #e7e2e0;
   min-height: calc(100vh - calc(var(--cell-size)* 4) - 50px);
 }
 .slide_11 .partner-text{
-  font-size: 10px;
+  font-size: 13px;
 }
 .slide_12 {
   padding: calc(var(--cell-size)* 0);
