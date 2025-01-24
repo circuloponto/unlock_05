@@ -419,7 +419,7 @@ const Slide11 = () => {
               
               return (
                 <>
-                 <span>A </span>
+                 
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
