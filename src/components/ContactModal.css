@@ -22,9 +22,9 @@
 
 .modal-content {
   width: 500px;
- /*  background: #0f314d; */
-  background: #002f57;
+  background: #0f314d;
   background: rgb(137 114 99);
+  background: #65676a;
   height: 100vh;
   padding: 2rem;
   position: relative;

@@ -9,7 +9,7 @@
     "contacts": "contacts"
   },
   "slides": {
-    "disclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the National Agency. Neither the European Union nor the granting authority can be held responsible for them",
+    "disclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the National Agency. Neither the European Union nor the granting authority can be held responsible for them.",
     "slide1": {
       "title": "Project",
       "description": "",
@@ -108,7 +108,7 @@
       }
     },
     "disclaimer": {
-      "text": "Funded by the European Union. Views and opinions expressed are those of the author(s) and do not necessarily reflect those of the European Union or the National Agency for the Management of the Erasmus+ Education and Training Programme. Neither the European Union nor the National Agency can be held responsible for them."
+      "text": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the National Agency. Neither the European Union nor the granting authority can be held responsible for them."
     }
   },
   "news": {

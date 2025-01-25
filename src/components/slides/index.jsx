@@ -126,7 +126,7 @@ const Slide2 = () => {
             <span className="highlight">
               {t('slides.slide1.paragraph6').split(' - ')[0]}
             </span>
-            {'-' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
+            {' - ' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
           </div>
           <div className='last-paragraph'>
             
@@ -211,7 +211,9 @@ const Slide4 = () => {
 };
 
 const Slide5 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isEnglish = i18n.language === 'en';
+  
   return (
     <SlideSection>
       <div className="slide-container">
@@ -222,11 +224,25 @@ const Slide5 = () => {
               const text = t('slides.slide3.section1.paragraph2').split(' ');
               return (
                 <div className="last-paragraph">
-                  {text[0]} {text[1]} {' '}
-                  <span className="highlight">
-                     {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
-                  </span>
-                  {' '}{text.slice(7).join(' ')}
+                  {isEnglish ? (
+                    // English version
+                    <>
+                      {text[0]} {' '}
+                      <span className="highlight">
+                        {text[1]} {text[2]} {text[3]} {text[4]} 
+                      </span>
+                      {' '}{text.slice(5).join(' ')}
+                    </>
+                  ) : (
+                    // Portuguese version
+                    <>
+                      {text[0]} {text[1]} {' '}
+                      <span className="highlight">
+                        {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
+                      </span>
+                      {' '}{text.slice(7).join(' ')}
+                    </>
+                  )}
                 </div>
               );
             })()}
@@ -238,7 +254,8 @@ const Slide5 = () => {
 };
 
 const Slide6 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isEnglish = i18n.language === 'en';
   return (
     <SlideSection>
       <div className="slide-container">
@@ -247,13 +264,28 @@ const Slide6 = () => {
             <div>
               {(() => {
                 const text = t('slides.slide3.section2.paragraph1').split(' ');
+                
                 return (
                   <>
-                    {text[0]} {text[1]} {' '}
-                    <span className="highlight">
-                       {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]} {text[8]} {text[9]} {text[10]} {text[11]} {text[12]}
-                    </span>
-                    {' '}{text.slice(13).join(' ')}
+                    {isEnglish ? (
+                      // English version
+                      <>
+                        {text[0]} {' '}
+                        <span className="highlight">
+                         {text[1]} {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]} 
+                        </span>
+                        {' '}{text.slice(8).join(' ')}
+                      </>
+                    ) : (
+                      // Portuguese version
+                      <>
+                        {text[0]} {text[1]} {' '}
+                        <span className="highlight">
+                          {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]} {text[8]} {text[9]} {text[10]} {text[11]} {text[12]}
+                        </span>
+                        {' '}{text.slice(13).join(' ')}
+                      </>
+                    )}
                   </>
                 );
               })()}
@@ -263,11 +295,25 @@ const Slide6 = () => {
                 const text = t('slides.slide3.section2.paragraph2').split(' ');
                 return (
                   <>
-                    {text[0]} {text[1]} {text[2]} {text[3]} {' '}
-                    <span className="highlight">
-                     {text[4]} {text[5]} {text[6]} {text[7]} {text[8]}
-                    </span>
-                    {' '}{text.slice(9).join(' ')}
+                    {isEnglish ? (
+                      // English version
+                      <>
+                        {text[0]} {text[1]} {' '}
+                        <span className="highlight">
+                           {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
+                        </span>
+                        {' '}{text.slice(7).join(' ')}
+                      </>
+                    ) : (
+                      // Portuguese version
+                      <>
+                        {text[0]} {text[1]} {text[2]} {text[3]}{' '}
+                        <span className="highlight">
+                          {text[4]} {text[5]} {text[6]} {text[7]} {text[8]} 
+                        </span>
+                        {' '}{text.slice(9).join(' ')}
+                      </>
+                    )}
                   </>
                 );
               })()}
