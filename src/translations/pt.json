@@ -21,7 +21,7 @@
       },
       "consultis": {
         "title": "Consultis",
-        "email": "consultis@consultis.pt",
+        "email": "crea@consultis.pt",
         "mobile": "+351 933261757",
         "morada": "Centro de Recursos em Emprego Apoiado, Rua Calouste Gulbenkian, nº52, 5º andar, E7, 4050-144 Porto, Portugal"
       },
@@ -49,6 +49,7 @@
       {
         "id": "1",
         "date": "2024-01-15",
+        "titleSection":"Notícias",
         "title": "Projeto UNLOCK Realiza Primeiro Encontro Transnacional em Lisboa",
         "content": "No dia 29 de novembro de 2024, o projeto UNLOCK (2024-1-PT01-KA210-VET-000257459) realizou o seu primeiro encontro transnacional em Lisboa, Portugal, numa sessão organizada pela RUMO, entidade coordenadora. Intitulado “Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders”, o projeto une parceiros de Portugal e da Bélgica com o objetivo de enfrentar os desafios de empregabilidade de ex-reclusos. Financiado pelo programa Erasmus+, o Projeto UNLOCK arrancou a 1 de outubro de 2024 e tem uma duração prevista de 18 meses, terminando a 31 de março de 2026. A iniciativa pretende criar recursos e estratégias inovadoras que reforcem as práticas de emprego apoiado, promovendo a integração de ex-reclusos no mercado de trabalho.O encontro decorreu na Casa dos Direitos Sociais, um espaço cedido pela Câmara Municipal de Lisboa, e marcou o arranque oficial das atividades do projeto. Estiveram presentes representantes da RUMO, CONSULTIS e SUEM.BE, que discutiram os objetivos do projeto, o plano de trabalho e as estratégias necessárias para alcançar os resultados esperados. Este encontro foi essencial para lançar as bases do projeto UNLOCK, fortalecendo a colaboração entre os parceiros e definindo prioridades claras para os próximos passos. Com uma visão conjunta e um plano de ação estruturado, o projeto está preparado para gerar um impacto positivo na criação de oportunidades de trabalho para ex-reclusos, através de práticas de emprego apoiado mais eficazes. Acompanhe-nos para mais novidades e atualizações ao longo desta jornada."
       }
@@ -60,7 +61,8 @@
     "slide1": {
       "title": "Título em Português",
       "description": "Descrição em Português",
-      "paragraph1": " A saída da prisão e o processo de reintegração na sociedade representam um momento de grande desafio para os ex-reclusos, sendo que o emprego é um fator crucial para apoiar essa adaptação e prevenir a reincidência. O projeto UNLOCK visa adaptar o modelo europeu de Emprego Apoiado para facilitar a inclusão de ex-reclusos no mercado de trabalho em Portugal e na Bélgica. Através de percursos personalizados, procuramos apoiar a transição para o mercado de trabalho, combater o estigma e promover a igualdade de oportunidades.",
+      "paragraph1": " A saída da prisão e o processo de reintegração na sociedade representam um momento de grande desafio para os ex-reclusos, sendo que o emprego é um fator crucial para apoiar essa adaptação e prevenir a reincidência. ",
+      "paragraph1.1":"O projeto UNLOCK visa adaptar o modelo europeu de Emprego Apoiado para facilitar a inclusão de ex-reclusos no mercado de trabalho em Portugal e na Bélgica. Através de percursos personalizados, procuramos apoiar a transição para o mercado de trabalho, combater o estigma e promover a igualdade de oportunidades.",
       "paragraph2": "Os principais objetivos incluem:",
       "paragraph3": "1 - Adaptar o modelo de Emprego Apoiado para ex-reclusos.",
       "paragraph4": "2 - Desenvolver diretrizes de orientação profissional para apoiar os profissionais no processo de reintegração laboral de ex-reclusos.",
@@ -72,8 +74,8 @@
       "section1": {
         "paragraph1": "A reabilitação profissional dos ex-reclusos é fundamental para a sua reintegração, garantindo igualdade de oportunidades e combatendo a discriminação. O projeto UNLOCK apoia este grupo, que enfrenta dificuldades de acesso ao mercado de trabalho, promovendo uma reintegração bem-sucedida. Os principais grupos-alvo são:",
         "paragraph2": "Ex-reclusos: Beneficiários finais do projeto, que procuram a reintegração laboral. Com orientação personalizada e a metodologia de Emprego Apoiado, o objetivo é melhorar o seu acesso a oportunidades de emprego.",
-        "paragraph3": "Profissionais do setor social e de emprego: Técnicos de reintegração, assistentes sociais, técnicos de emprego e outros profissionais que prestam apoio direto aos ex-reclusos. Serão formados para implementar o modelo de emprego apoiado.",
-        "paragraph4": "Operadores EFP / Centros de EFP: Responsáveis pela formação de técnicos de Emprego Apoiado, que poderão usar os resultados do projeto para melhorar os seus serviços de formação."
+        "paragraph3": "Profissionais do setor social e de emprego: Técnicos de reintegração, assistentes sociais, técnicos de emprego e outros profissionais que prestam apoio direto aos ex-reclusos. Serão formados para implementar o modelo de Emprego Apoiado.",
+        "paragraph4": "Operadores de EFP / Centros de EFP: Responsáveis pela formação de técnicos de emprego apoiado, que poderão usar os resultados do projeto para melhorar os seus serviços de formação."
       },
       "section2": {
         "paragraph1": "ONGs de apoio a ex-reclusos: Organizações que oferecem formação e apoio a ex-reclusos, que poderão beneficiar das ferramentas do projeto para melhorar a qualidade dos seus serviços.",
@@ -89,7 +91,7 @@
       },
       "section2": {
         "paragraph1": "A atividade Formação Piloto: Desenvolvimento Profissional para o Apoio à Reintegração de Ex-Reclusos capacitará 24 profissionais em Portugal e na Bélgica, dotando-os das competências necessárias para aplicar as diretrizes e os recursos desenvolvidos. As sessões de formação, que incluirão estudos de caso e exercícios interativos, permitirão que os participantes utilizem as ferramentas adquiridas em contextos reais.",
-        "paragraph2": "Por fim, a atividade Disseminação, Exploração e Eventos Multiplicadores visa aumentar a visibilidade do projeto e expandir o seu impacto. Serão organizados eventos em Portugal e na Bélgica para partilhar os resultados alcançados e promover o networking entre os stakeholders. Para complementar estas iniciativas, serão produzidos materiais de comunicação, incluindo uma brochura e um vídeo promocional, que será utilizado na campanha nas redes sociais para divulgar o projeto e as práticas de emprego apoiado, alcançando um público mais amplo. O website será mantido como um centro de recursos acessívela quaisquer interessados, assegurando a continuidade da disponibilização de informações e resultados após o término do projeto."
+        "paragraph2": "Por fim, a atividade Disseminação, Exploração e Eventos Multiplicadores visa aumentar a visibilidade do projeto e expandir o seu impacto. Serão organizados eventos em Portugal e na Bélgica para partilhar os resultados alcançados e promover o networking entre os stakeholders. Para complementar estas iniciativas, serão produzidos materiais de comunicação, incluindo uma brochura e um vídeo promocional, que será utilizado na campanha nas redes sociais para divulgar o projeto e as práticas de emprego apoiado, alcançando um público mais amplo. O website será mantido como um centro de recursos acessível a quaisquer interessados, assegurando a continuidade da disponibilização de informações e resultados após o término do projeto."
       }
     },
     "slide4": {
@@ -101,7 +103,7 @@
       "section2": {
         "paragraph1": "Eventos Multiplicadores: Dois eventos, um em Portugal e outro na Bélgica, destinados a técnicos de reintegração, assistentes sociais, empregadores, representantes de ONGs, instituições públicas, empresas de recrutamento, agências de emprego, centros de formação profissional e autarquias locais. Estes eventos visam partilhar os resultados do projeto, promover o networking e fortalecer a rede de stakeholders.",
         "paragraph2": "Campanha nas Redes Sociais: Uma campanha nas redes sociais desenvolvida para promover o projeto e aumentar a sensibilização sobre as práticas de emprego apoiado. A campanha incluirá um vídeo promocional curto, que será utilizado para divulgar o projeto e os seus resultados em diversas plataformas de redes sociais.",
-        "paragraph3": "Website do Projeto: Website como centro de recursos, disponibilizando todos os resultados e materiais de forma acessível a todos os interessados, garantindo a continuidade do acesso após o término do projeto."
+        "paragraph3": "Website do Projeto: Website como centro de recursos, disponibilizando todos os resultados e materiais de forma acessível a quaisquer interessados, garantindo a continuidade do acesso após a conclusão do projeto."
       }
     },
     "slide5": {

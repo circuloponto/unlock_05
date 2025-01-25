@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import LanguagePicker from './LanguagePicker';
+import DirectionalScrollIndicator from './ScrollIndicator/DirectionalScrollIndicator';
 
 const DiamondIndicator = ({ 
   currentVerticalIndex, 
@@ -115,6 +116,7 @@ const DiamondIndicator = ({
           </div>
         </motion.button>
       </div>
+      <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} />
     </div>
   );
 };

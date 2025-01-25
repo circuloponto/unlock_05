@@ -19,7 +19,7 @@ const Breadcrumb = ({ slides, currentVerticalIndex, currentHorizontalIndex, setC
           ))}
         </div>
       ))}
-      <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} />
+    {/*   <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} /> */}
     </nav>
   );
 };

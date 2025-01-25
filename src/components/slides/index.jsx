@@ -78,9 +78,14 @@ const Slide1 = () => {
       <div className="slide-container">
         <div className="slide slide_1">   
           
-            <div className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div>
-            {t('slides.slide1.paragraph1')}
-          
+            <div style={{textIndent:'-50px'}}className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div>
+          <div style={{textIndent:'50px'}}>
+
+           {t('slides.slide1.paragraph1')}
+          </div>
+          <div className="last-paragraph">
+          {t('slides.slide1.paragraph1.1')}
+          </div>
           <div>
           </div>
           
@@ -122,6 +127,10 @@ const Slide2 = () => {
               {t('slides.slide1.paragraph6').split(' - ')[0]}
             </span>
             {'-' + t('slides.slide1.paragraph6').split(' - ').slice(1).join(' - ')}
+          </div>
+          <div className='last-paragraph'>
+            
+            {t('slides.slide1.paragraph7')}
           </div>
           
       </div>
@@ -189,7 +198,7 @@ const Slide4 = () => {
             {t('slides.slide2.section2.paragraph3').split(':')[1]}
           </div>
       
-          <div>
+          <div className="last-paragraph">
            
               {t('slides.slide2.section2.paragraph4')}
            
@@ -212,13 +221,13 @@ const Slide5 = () => {
             {(() => {
               const text = t('slides.slide3.section1.paragraph2').split(' ');
               return (
-                <>
-                  {text[0]} {' '}
+                <div className="last-paragraph">
+                  {text[0]} {text[1]} {' '}
                   <span className="highlight">
-                    {text[1]} {text[2]} {text[3]} {text[4]}
+                     {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
                   </span>
-                  {' '}{text.slice(5).join(' ')}
-                </>
+                  {' '}{text.slice(7).join(' ')}
+                </div>
               );
             })()}
           </div>
@@ -240,11 +249,11 @@ const Slide6 = () => {
                 const text = t('slides.slide3.section2.paragraph1').split(' ');
                 return (
                   <>
-                    {text[0]} {' '}
+                    {text[0]} {text[1]} {' '}
                     <span className="highlight">
-                      {text[1]} {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]}
+                       {text[2]} {text[3]} {text[4]} {text[5]} {text[6]} {text[7]} {text[8]} {text[9]} {text[10]} {text[11]} {text[12]}
                     </span>
-                    {' '}{text.slice(8).join(' ')}
+                    {' '}{text.slice(13).join(' ')}
                   </>
                 );
               })()}
@@ -254,11 +263,11 @@ const Slide6 = () => {
                 const text = t('slides.slide3.section2.paragraph2').split(' ');
                 return (
                   <>
-                    {text[0]} {text[1]} {' '}
+                    {text[0]} {text[1]} {text[2]} {text[3]} {' '}
                     <span className="highlight">
-                      {text[2]} {text[3]} {text[4]} {text[5]} {text[6]}
+                     {text[4]} {text[5]} {text[6]} {text[7]} {text[8]}
                     </span>
-                    {' '}{text.slice(7).join(' ')}
+                    {' '}{text.slice(9).join(' ')}
                   </>
                 );
               })()}
@@ -325,7 +334,7 @@ const Slide8 = () => {
   );
 };
 const Slide9 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <SlideSection>
       <div className="slide-container">
@@ -342,7 +351,7 @@ const Slide9 = () => {
               
               return (
                 <>
-                
+                  {i18n.language === 'pt' && 'A '}
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
@@ -361,7 +370,7 @@ const Slide9 = () => {
 };
 
 const Slide10 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <SlideSection>
       <div className="slide-container">
@@ -378,7 +387,7 @@ const Slide10 = () => {
               
               return (
                 <>
-               
+                  {i18n.language === 'pt' && 'A '}
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
@@ -397,12 +406,12 @@ const Slide10 = () => {
 };
 
 const Slide11 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <SlideSection>
       <div className="slide-container">
         <div className="slide slide_11">
-          <img src={suemLogo} alt="SUEM.BE Logo" className="partner-logo suem" />
+          <img src={suemLogo} alt="Suem Logo" className="partner-logo suem" />
           <div className="partner-text">
             {(() => {
               const text = t('slides.slide5.section3.paragraph1');
@@ -414,7 +423,7 @@ const Slide11 = () => {
               
               return (
                 <>
-                 
+                  {i18n.language === 'pt' && 'A '}
                   <span className="highlight">{phrase}</span>
                   {text.substring(index + phrase.length, websiteIndex)}
                   <span className="highlight">
@@ -474,7 +483,7 @@ const Slide12 = () => {
             {/* Left Column - News Content */}
             <div className="news-content">
               <div className="news-header">
-                <h2 className="news-title highlight">Notícias</h2>
+                <h2 className="news-title highlight">{t('news.newsItems.0.titleSection')}</h2>
                 <div className="news-date">{currentNews.date}</div>
                 <h3 className="news-title">{currentNews.title}</h3>
               </div>

@@ -149,7 +149,7 @@ const NewsPage = () => {
                 <>
                   <button className={`${styles.slideButton} ${styles.slideButtonLeft}`} onClick={handlePrevImage}>←</button>
                   <button className={`${styles.slideButton} ${styles.slideButtonRight}`} onClick={handleNextImage}>→</button>
-                  <div className={styles.dotIndicators}>
+               {/*    <div className={styles.dotIndicators}>
                     {images.map((_, index) => (
                       <button 
                         key={index}
@@ -157,7 +157,7 @@ const NewsPage = () => {
                         onClick={() => setCurrentImageIndex(index)}
                       />
                     ))}
-                  </div>
+                  </div> */}
                 </>
               )}
             </div>
