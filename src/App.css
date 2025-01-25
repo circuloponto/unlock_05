@@ -622,9 +622,10 @@
 
 @media (max-width: 500px) {
   .navigation-grid {
-    bottom: 18px;
+    bottom: 45px;
     left: 50%;
     grid-template-columns: 55px 70px 70px 55px;
+    grid-template-columns: 55px 110px 110px 55px;
     grid-template-rows: 20px;
     transform: translateX(-50%);
   }
@@ -1135,7 +1136,7 @@ a:hover .highlight {
 
 @media (min-width: 390px) and (max-width: 600px) {
   .breadcrumbs-nav {
-    bottom: 20px;
+    bottom: 47px;
     height: 15px;
     width: auto;
     gap: 5px;
@@ -2618,6 +2619,7 @@ hamburger-icon {
 .navigation-grid {
   
   grid-template-columns: 55px 125px 125px 55px;
+  grid-template-columns: 90px 125px 125px 90px;
   
 }
 }
@@ -3405,7 +3407,7 @@ hamburger-icon {
     z-index: 999
   }
   .breadcrumbs-nav {
-    bottom: 20px;
+    bottom: 50px;
     height: 15px;
     width: auto;
     gap: 5px;

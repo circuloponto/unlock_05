@@ -101,7 +101,7 @@ const DiamondIndicator = ({
 
       {/* Center space for breadcrumbs */}
       <div className="center-space" />
-
+      <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} />
       {/* Right button */}
       <div style={{ gridColumn: 4, gridRow: 1 }}>
         <motion.button
@@ -115,8 +115,9 @@ const DiamondIndicator = ({
             <FaChevronRight className="arrow arrow-right"/>
           </div>
         </motion.button>
+        
       </div>
-      <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} />
+   {/*    <DirectionalScrollIndicator currentSlide={{ verticalIndex: currentVerticalIndex, horizontalIndex: currentHorizontalIndex }} isMenuOpen={isMenuOpen} /> */}
     </div>
   );
 };

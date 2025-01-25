@@ -2,9 +2,10 @@
   bottom: 50px;
   position: absolute;
   /* top: -40px; */
-  left: 0;
+  left: 30px;
   display: grid;
   grid-template-columns: 55px 175px 175px 55px;
+  grid-template-columns: 55px 195px 195px 55px;
   grid-template-rows: 20px;
   /* width: 81vw; */
   /* gap: 400px; */
@@ -16,23 +17,22 @@
 @media (max-width: 600px) { 
   .container {
     position: absolute;
-      top: -40px;
-      right: -140px;
-      display: flex;
-      gap: 370px;
-      z-index: 1000;
+    top: -50px;
+    left: 45px;
+    display: flex;
+    gap: 230px;
+    z-index: 1000;
   }
   
 }
 @media (max-width: 500px) { 
   .container {
     position: absolute;
-    top: -60px;
-    right: -175px;
+    top: -50px;
+    left: 23px;
     display: flex;
-    gap: 360px;
+    gap: 167px;
     z-index: 1000;
-    transform: scale(0.7);
   }
   
 }
