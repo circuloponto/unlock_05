@@ -78,8 +78,8 @@ const Slide1 = () => {
       <div className="slide-container">
         <div className="slide slide_1">   
           
-            <div style={{textIndent:'-50px'}}className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div>
-          <div style={{textIndent:'50px'}}>
+            <div className="title highlight">Tailoring and Enhancing the European Model of Supported Employment to Unlock Job Opportunities for Ex-Offenders</div>
+          <div >
 
            {t('slides.slide1.paragraph1')}
           </div>

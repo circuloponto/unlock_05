@@ -1090,10 +1090,8 @@ a:hover .highlight {
   width:calc(var(--cell-size)*20);
   text-align: center;
  /*  text-indent: -50px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+ text-align-last: center;
+  
   /* width: 80vw; */
 }
 .last-paragraph{
